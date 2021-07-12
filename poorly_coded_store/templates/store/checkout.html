@@ -8,8 +8,8 @@
 </head>
 <body>
     <h3>Thank you for your business!</h3>
-    <p>We charged your credit card for $</p>
-    <p>You have ordered # items so far and spent $$ with Amadon.com!</p>
+    <p>We charged your credit card for ${{ b_total }} </p>
+    <p>You have ordered {{ total_items.total_items }} items so far and spent $${{ grand_total.total_cost|floatformat:2 }} with Amadon.com!</p>
     <p><a href="/">Go Back</a></p>
 </body>
 </html>
